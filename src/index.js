@@ -6,7 +6,7 @@ const writeFile = async (fileName, fileContent) => {
   // dont change function name
 
   try{
- const file=await fs.appendFile('myfile.txt',"Newton School");
+ const file=await fs.appendFile(fileName,fileContent);
  console.log(file);
  return file;
   }catch(error){
